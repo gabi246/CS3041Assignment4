@@ -5,6 +5,24 @@
     <title> Fridge Friend </title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
     <link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
+
+    <style>
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </head>
 <style>
 body {
@@ -52,7 +70,9 @@ body {
     </div>
 
     <!-- H1 means 1st level heading -->
-    <h1>Help Page</h1>
+    <div id="myDIV" class="header">
+        <h2>Help Page</h2>
+    </div>
 
     <!-- Help for List Page -->
     <h2>List Page Help</h2>
