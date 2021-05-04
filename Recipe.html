@@ -5,6 +5,39 @@
     <title> Fridge Friend </title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
     <link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
+    <style>
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </head>
 <style>
 body {
@@ -41,6 +74,34 @@ body {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+    <style>
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
 <body>
 <!-- HTML5 article tag for content -->
 <div id="content">
@@ -51,7 +112,50 @@ body {
         <a href="Help.html">Help</a>
     </div>
 
+    <div id="myDIV" class="header">
+        <h2>Suggested Recipes</h2>
+    </div>
 
+    <table id="myTable">
+        <tr>
+            <th>Recipes</th>
+            <th>Ingredients</th>
+        </tr>
+        <tr>
+            <td>Scrambled Eggs</td>
+            <td>
+                <ul>
+                    <li>Butter</li>
+                    <li>Eggs</li>
+                    <li>Pinch of salt and pepper</li>
+                </ul>
+            </td>
+            <td>
+                <a target="_blank" href="https://www.eggs.ca/recipes/simple-scrambled-eggs">
+                    <img src="scrambledIMG.jpg" alt="scrambledIMG" style="width:150px">
+                </a>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Omelet</td>
+            <td>
+                <ul>
+                    <li>Butter</li>
+                    <li>Eggs</li>
+                    <li>Shredded Cheddar</li>
+                    <li>Pinch of salt and pepper</li>
+                    <li>Freshly Chopped Chives</li>
+                </ul>
+            </td>
+            <td>
+                <a target="_blank" href="https://www.delish.com/cooking/recipe-ideas/a24892843/how-to-make-omelet/">
+                    <img src="omletteIMG.png" alt="omletteIMG" style="width:150px">
+                </a>
+            </td>
+        </tr>
+
+    </table>
 
     <footer>CS3041: Fridge Friend App </footer>
 </div>
